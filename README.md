@@ -92,6 +92,8 @@ The script logs information and errors.
 
 Log entries include timestamps and are saved to the file specified by <log_file>.
 
+If the log file does not exist, the script will create it in the same directory.
+
 
 
 # License
