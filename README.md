@@ -47,11 +47,6 @@ Clone the repository:
     cd sync_folders_vs
 
 
-Install dependencies if not already installed:
-
-    pip install os shutil time hashlib argparse logging sys
-
-
 
 # Usage
 
