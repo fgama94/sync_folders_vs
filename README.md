@@ -63,13 +63,13 @@ After installing the required libraries, you can run the tool from the command l
 
 # Arguments
 
-- <source_folder>: Path to the source folder you want to synchronize.
+- source_folder: Path to the source folder you want to synchronize.
 
-- <replica_folder>: Path to the destination folder where the synchronization will occur.
+- replica_folder: Path to the destination folder where the synchronization will occur.
 
-- <log_file>: Path to the log file where synchronization details and errors will be recorded.
+- log_file: Path to the log file where synchronization details and errors will be recorded.
 
-- <interval>: Time interval (in seconds) between synchronization checks.
+- interval: Time interval (in seconds) between synchronization checks.
 
 
 
