@@ -82,7 +82,9 @@ This command will synchronize the folders every 30 seconds and log the activitie
 
 - Replica folder creation: If the replica folder does not exist, the script attempts to create it. Exits with an error if it cannot be created.
 
-- Log File Path Issues: The script ensures the log file is not placed inside the source or replica folders. If there are issues with the log file path, the script will exit with an error message.
+- Log file creation: If the log file does not exist, the script will create it in the same directory.
+
+- Log file path issues: The script ensures the log file is not placed inside the source or replica folders. If there are issues with the log file path, the script will exit with an error message.
 
 
 
