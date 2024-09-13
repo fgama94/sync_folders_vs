@@ -6,11 +6,13 @@ sync_folders_vs is a Python tool designed to synchronize files between a source 
 
 # Features
 
-- Synchronizes Folders: Copies new or updated files from the source folder to the replica folder.
+- Synchronizes Files and Directories: Copies new or updated files or directories from the source folder to the replica folder.
 
-- Removes Obsolete Files: Deletes files and directories in the replica that are no longer present in the source folder.
+- Removes Files and Directories: Deletes files and directories in the replica that are no longer present in the source folder.
 
 - Logging: Records synchronization activities and errors to a specified log file.
+
+- Periodic Execution: Supports periodic synchronization at a user-defined interval.
 
 - SHA-256 Checksum: Uses SHA-256 checksums to verify file integrity.
 
@@ -21,6 +23,7 @@ sync_folders_vs is a Python tool designed to synchronize files between a source 
 Prerequisites:
 
 - Python 3.6 or higher
+- No external libraries required
 
 
 Required Python packages:
@@ -80,13 +83,19 @@ This command will synchronize the folders every 30 seconds and log the activitie
 
 # Error Handling
 
-The tool performs basic error handling for the following cases:
+- Source folder does not exist: The script exits with an error message if the source folder does not exist.
 
-- File Path Errors: Checks if the source and replica paths exist.
+- Replica folder creation: If the replica folder does not exist, the script attempts to create it. Exits with an error if it cannot be created.
 
-- Log File Errors: Ensures that the log file can be opened or created.
+- Log File Path Issues: The script ensures the log file is not placed inside the source or replica folders. If there are issues with the log file path, the script will exit with an error message.
 
-In case of errors, messages will be logged and printed to the console.
+
+
+# Logging
+
+The script logs information and errors. 
+
+Log entries include timestamps and are saved to the file specified by <log_file>.
 
 
 
